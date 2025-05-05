@@ -1,39 +1,64 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+EditableTextWidget is a customizable Flutter widget that provides a styled, resizable, 
+and editable text field with extensive layout and design options. 
+It allows developers to easily integrate editable text areas into their UI with control over dimensions, 
+font size, colors, borders, padding, and margins—making it ideal for dynamic forms, custom input sections, 
+or editable labels in Flutter applications.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+✅ Custom Text Input
+Editable text field with pre-filled default text.
 
-## Getting started
+🎨 Fully Customizable Appearance
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Control widget dimensions (width, height)
+
+Font size and color customization
+
+Background color and border styling
+
+Optional rounded corners
+
+📦 Flexible Layout Controls
+
+Outer padding and margin of the widget
+
+Inner padding and margin for the text
+
+Separate sizing for text container
+
+🔲 Optional Border
+Toggle border visibility and style via props (border, borderColor, borderWidth).
+
+📱 Responsive Design
+Width and height scale relative to screen size using MediaQuery.
+
+🧪 Stateless-like Behavior with Editable Interface
+Supports controlled editable text field via constructor input.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+Widget build(BuildContext context) {
+  return const MaterialApp(
+    home: Scaffold(
+      body: Center(
+        child: EditableTextWidget(
+          text: 'This is an example',
+          width: 0.8,
+          height: 0.1,
+          fontSize: 18,
+          backgroundColor: Colors.green,
+          border: true,
+          borderColor: Colors.red,
+          borderWidth: 2.0,
+          borderRadius: 10.0,
+          padding: 10.0,
+          textColor: Colors.red,
+        ),
+      ),
+    ),
+  );
+}
 ```
 
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
