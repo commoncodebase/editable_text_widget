@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: Center(
           child: EditableTextWidget(
-            text: 'Selammmm',
+            text: 'This is an example',
             width: 0.8,
             height: 0.1,
             fontSize: 18,
